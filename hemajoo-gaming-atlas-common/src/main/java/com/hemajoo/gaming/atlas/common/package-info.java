@@ -1,4 +1,4 @@
 /**
- * Contains common artifacts for the Hemajoo's Gaming Atlas project.
+ * Contains artifacts for the Hemajoo's Gaming Atlas Common project.
  */
 package com.hemajoo.gaming.atlas.common;
