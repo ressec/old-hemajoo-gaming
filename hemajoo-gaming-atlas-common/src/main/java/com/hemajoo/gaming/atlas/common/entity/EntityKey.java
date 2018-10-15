@@ -23,43 +23,46 @@ import lombok.NonNull;
 public final class EntityKey implements IEntityKey
 {
 	/**
+	 * Server identifier this entity belongs to.
+	 */
+	@Getter
+	private short serverId;
+
+	/**
+	 * Instance identifier this entity belongs to.
+	 */
+	@Getter
+	private short instanceId;
+
+	/**
+	 * Zone identifier this entity belongs to.
+	 */
+	@Getter
+	private short zoneId;
+
+	/**
 	 * Entity type.
 	 */
 	@Getter
 	private EntityType type;
 
 	/**
+	 * Entity identifier (category).
+	 */
+	@Getter
+	private short id;
+
+	/**
+	 * Spawn identifier.
+	 */
+	@Getter
+	private short spawnId;
+
+	/**
 	 * Entity natural name.
 	 */
 	@Getter
 	private String name;
-
-	/**
-	 * Entity identity string which is also used as an identifier.
-	 * <br>
-	 * It is a computed value.
-	 */
-	private String identity;
-
-	/**
-	 * Entity identifier.
-	 */
-	@Getter
-	private Identifier identifier;
-
-	/**
-	 * Creates a new entity key.
-	 * <hr>
-	 * @param type Entity type.
-	 * @param name Entity name.
-	 * @param identifier Entity unique identifier.
-	 */
-	public EntityKey(@NonNull final EntityType type, @NonNull String name, @NonNull Identifier identifier)
-	{
-		this.type = type;
-		this.name = name;
-		this.identifier = identifier;
-	}
 
 	/**
 	 * Creates a new entity key.
@@ -71,19 +74,12 @@ public final class EntityKey implements IEntityKey
 	{
 		this.type = type;
 		this.name = name;
-
-		//TODO The identifier is to be acquired/computed here using a global registry/manager.
 	}
 
-	/**
-	 * Returns the string identity for this entity.
-	 * <hr>
-	 * @return String identity of this entity.
-	 */
 	@Override
-	public String getIdentity()
+	public String getAsString()
 	{
-		//TODO Complete implementation here.
-		return identity;
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
