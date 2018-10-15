@@ -35,16 +35,44 @@ public interface IEntityKey
 	String getName();
 
 	/**
-	 * Returns the identifier of this entity.
+	 * Returns the server identifier this entity belongs to.
 	 * <br>
-	 * @return The Identifier of this entity.
+	 * @return The server identifier this entity belongs to.
 	 */
-	Identifier getIdentifier();
+	short getServerId();
 
 	/**
-	 * Returns the string identity of this entity.
+	 * Returns the instance identifier this entity belongs to.
 	 * <br>
-	 * @return The identity of this entity.
+	 * @return The instance identifier this entity belongs to.
 	 */
-	String getIdentity();
+	short getInstanceId();
+
+	/**
+	 * Returns the zone identifier this entity belongs to.
+	 * <br>
+	 * @return The zone identifier this entity belongs to.
+	 */
+	short getZoneId();
+
+	/**
+	 * Returns the entity identifier.
+	 * <br>
+	 * @return The entity identifier.
+	 */
+	short getId();
+
+	/**
+	 * Returns the spawn identifier.
+	 * <br>
+	 * @return The spawn identifier.
+	 */
+	short getSpawnId();
+
+	/**
+	 * Returns the entity key as a string.
+	 * <br>
+	 * @return The entity key as a string.
+	 */
+	String getAsString();
 }
