@@ -16,6 +16,7 @@ import lombok.NonNull;
 
 /**
  * Represents the key of an entity.
+ * To be reviewed...
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
