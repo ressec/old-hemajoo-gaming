@@ -15,7 +15,8 @@ import lombok.Getter;
 import lombok.NonNull;
 
 /**
- * Represents an Hemajoo entity.
+ * Represents an Hemajoo entity. An entity is a basic low level element that has a
+ * name and an identifier.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
