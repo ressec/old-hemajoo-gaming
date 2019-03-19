@@ -17,6 +17,12 @@ import java.util.Random;
 import com.github.javafaker.Faker;
 import com.hemajoo.gaming.atlas.server.avatar.Avatar;
 
+/**
+ * Provides a test class for the back-end avatars entities.
+ * <hr>
+ * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
+ * @version 1.0.0
+ */
 public class AvatarTester
 {
 	/**
