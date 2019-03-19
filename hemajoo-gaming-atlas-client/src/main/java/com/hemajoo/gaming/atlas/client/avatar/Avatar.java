@@ -12,6 +12,7 @@
 package com.hemajoo.gaming.atlas.client.avatar;
 
 import com.hemajoo.gaming.atlas.common.avatar.AbstractAvatar;
+import com.hemajoo.gaming.atlas.common.avatar.IAvatar;
 import com.hemajoo.gaming.atlas.common.base.FrontEnd;
 
 /**
@@ -34,6 +35,13 @@ public final class Avatar extends AbstractAvatar implements FrontEnd
 	public Avatar()
 	{
 		super();
+	}
+
+	@Override
+	public IAvatar generate()
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

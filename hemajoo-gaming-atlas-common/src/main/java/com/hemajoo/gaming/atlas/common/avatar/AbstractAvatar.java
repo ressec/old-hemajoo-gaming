@@ -27,91 +27,91 @@ public abstract class AbstractAvatar implements IAvatar
 	 * Avatar's key.
 	 */
 	@Getter
-	private Key avatarKey;
+	protected Key avatarKey;
 
 	/**
 	 * Player's key.
 	 */
 	@Getter
-	private Key playerKey;
+	protected Key playerKey;
 
 	/**
 	 * Avatar's faction.
 	 */
 	@Getter
-	private FactionType faction;
+	protected FactionType faction;
 
 	/**
 	 * Avatar's race.
 	 */
 	@Getter
-	private RaceType race;
+	protected RaceType race;
 
 	/**
 	 * Avatar's gender.
 	 */
 	@Getter
-	private GenderType gender;
+	protected GenderType gender;
 
 	/**
 	 * Avatar's specialization (class).
 	 */
 	@Getter
-	private SpecializationType specialization;
+	protected SpecializationType specialization;
 
 	/**
 	 * Avatar's status.
 	 */
 	@Getter
-	private StatusType status;
+	protected StatusType status;
 
 	/**
 	 * Avatar's name.
 	 */
 	@Getter
-	private String name;
+	protected String name;
 
 	/**
 	 * Avatar's age.
 	 */
 	@Getter
-	private byte age;
+	protected byte age;
 
 	/**
 	 * Avatar's level.
 	 */
 	@Getter
-	private short level;
+	protected short level;
 
 	/**
 	 * Avatar's health.
 	 */
 	@Getter
-	private Health health;
+	protected Health health;
 
 	/**
 	 * Avatar's energy.
 	 */
 	@Getter
-	private Energy energy;
+	protected Energy energy;
 
 	/**
 	 * Avatar's position.
 	 */
 	@Getter
-	private Position position;
+	protected Position position;
 
 	/**
 	 * Avatar's title.
 	 */
 	@Getter
-	private TitleType title;
+	protected TitleType title;
 
 	/**
 	 * Avatar's speed.
 	 */
 	@Getter
-	private short speed;
+	protected short speed;
 
 	/**
 	 * Creates a new empty avatar.
@@ -127,7 +127,6 @@ public abstract class AbstractAvatar implements IAvatar
 		status = StatusType.UNDEFINED;
 		specialization = SpecializationType.UNDEFINED;
 		race = RaceType.UNDEFINED;
-		//faction = FactionType.UNDEFINED;
 		faction = race.getFaction();
 
 		health = new Health();
@@ -136,5 +135,28 @@ public abstract class AbstractAvatar implements IAvatar
 
 		avatarKey = new Key();
 		playerKey = new Key();
+	}
+
+	/**
+	 * Generates randomly a new avatar.
+	 * <hr>
+	 * @return Newly created avatar.
+	 */
+	public abstract IAvatar generate();
+
+	@SuppressWarnings("nls")
+	@Override
+	public String toString()
+	{
+		return new StringBuilder()
+				.append("name " + this.getName())
+				.append(", race: " + this.getRace())
+				.append(", class: " + this.getSpecialization())
+				.append(", faction: " + this.getFaction())
+				.append(", gender: " + this.getGender())
+				.append(", age: " + this.getAge())
+				.append(", level: " + this.getLevel())
+				.append(", status: " + this.getStatus())
+				.toString();
 	}
 }
