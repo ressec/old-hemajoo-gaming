@@ -11,45 +11,41 @@
  */
 package com.hemajoo.gaming.atlas.common.avatar;
 
-import lombok.Getter;
-
 /**
- * Provides a concrete implementation of a {@link Position}.
+ * Enumerates the several possible energy types for an {@link IAvatar}.
  * <hr>
  * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
  */
-public class Position
+public enum EnergyType
 {
 	/**
-	 * Default serialization identifier.
+	 * Undefined energy type.
 	 */
-	@SuppressWarnings("unused")
-	private static final long serialVersionUID = 1L;
+	UNDEFINED,
 
 	/**
-	 * X coordinate.
+	 * Mana energy type.
 	 */
-	@Getter
-	private int x = 0;
+	MANA,
 
 	/**
-	 * Y coordinate.
+	 * Rage energy type.
 	 */
-	@Getter
-	private int y = 0;
+	RAGE,
 
 	/**
-	 * Altitude.
+	 * Dexterity energy type.
 	 */
-	@Getter
-	private int altitude = 0;
+	DEXTERITY,
 
 	/**
-	 * Creates a new empty position.
+	 * Concentration energy type.
 	 */
-	public Position()
-	{
-		// Empty.
-	}
+	CONCENTRATION,
+
+	/**
+	 * Focus energy type.
+	 */
+	FOCUS,
 }

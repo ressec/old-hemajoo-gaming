@@ -108,10 +108,33 @@ public abstract class AbstractAvatar implements IAvatar
 	private TitleType title;
 
 	/**
+	 * Avatar's speed.
+	 */
+	@Getter
+	private short speed;
+
+	/**
 	 * Creates a new empty avatar.
 	 */
 	public AbstractAvatar()
 	{
-		// EMPTY
+		name = "";
+		age = 0;
+		level = 0;
+		speed = 0;
+		title = TitleType.NONE;
+		gender = GenderType.UNDEFINED;
+		status = StatusType.UNDEFINED;
+		specialization = SpecializationType.UNDEFINED;
+		race = RaceType.UNDEFINED;
+		//faction = FactionType.UNDEFINED;
+		faction = race.getFaction();
+
+		health = new Health();
+		energy = new Energy();
+		position = new Position();
+
+		avatarKey = new Key();
+		playerKey = new Key();
 	}
 }
