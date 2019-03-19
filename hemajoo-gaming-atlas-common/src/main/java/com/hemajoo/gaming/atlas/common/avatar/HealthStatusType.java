@@ -17,7 +17,7 @@ package com.hemajoo.gaming.atlas.common.avatar;
  * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
  */
-public enum StatusType
+public enum HealthStatusType
 {
 	/**
 	 * Undefined status.

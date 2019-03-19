@@ -80,9 +80,9 @@ public interface IAvatar
 	/**
 	 * Returns the avatar status.
 	 * <hr>
-	 * @return Avatar {@link StatusType}.
+	 * @return Avatar {@link HealthStatusType}.
 	 */
-	StatusType getStatus();
+	HealthStatusType getStatus();
 
 	/**
 	 * Returns the avatar level.

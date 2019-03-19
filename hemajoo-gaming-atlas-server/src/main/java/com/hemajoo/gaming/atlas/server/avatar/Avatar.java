@@ -21,7 +21,7 @@ import com.hemajoo.gaming.atlas.common.avatar.GenderType;
 import com.hemajoo.gaming.atlas.common.avatar.IAvatar;
 import com.hemajoo.gaming.atlas.common.avatar.RaceType;
 import com.hemajoo.gaming.atlas.common.avatar.SpecializationType;
-import com.hemajoo.gaming.atlas.common.avatar.StatusType;
+import com.hemajoo.gaming.atlas.common.avatar.HealthStatusType;
 import com.hemajoo.gaming.atlas.common.avatar.TitleType;
 import com.hemajoo.gaming.atlas.common.base.BackEnd;
 
@@ -122,7 +122,7 @@ public final class Avatar extends AbstractAvatar implements BackEnd
 		this.gender = GenderType.values()[value];
 
 		// Randomly select a status.
-		this.status = health.getCurrent() > 0 ? StatusType.ALIVE : StatusType.DEAD;
+		this.status = health.getCurrent() > 0 ? HealthStatusType.ALIVE : HealthStatusType.DEAD;
 
 		// Randomly select a level.
 		this.level = (short) (random.nextInt(99) + 1);

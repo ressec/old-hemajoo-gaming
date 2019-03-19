@@ -63,7 +63,7 @@ public abstract class AbstractAvatar implements IAvatar
 	 * Avatar's status.
 	 */
 	@Getter
-	protected StatusType status;
+	protected HealthStatusType status;
 
 	/**
 	 * Avatar's name.
@@ -124,7 +124,7 @@ public abstract class AbstractAvatar implements IAvatar
 		speed = 0;
 		title = TitleType.NONE;
 		gender = GenderType.UNDEFINED;
-		status = StatusType.UNDEFINED;
+		status = HealthStatusType.UNDEFINED;
 		specialization = SpecializationType.UNDEFINED;
 		race = RaceType.UNDEFINED;
 		faction = race.getFaction();
