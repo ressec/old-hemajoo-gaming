@@ -1,7 +1,6 @@
 sudo: false
 
-language: 
-  - java
+language: java
 
 jdk: 
   - oraclejdk9
@@ -18,11 +17,8 @@ addons:
     token:
       secure: "${SONAR_TOKEN}"
 
-cache:
-  - $HOME/.m2
-  #- target/
-
-before_script:
+#cache:
+#before_script:
 
 script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -f hemajoo-gaming-atlas-parent/pom.xml
 
