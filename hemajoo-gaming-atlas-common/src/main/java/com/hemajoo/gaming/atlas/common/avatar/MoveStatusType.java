@@ -12,25 +12,40 @@
 package com.hemajoo.gaming.atlas.common.avatar;
 
 /**
- * Enumerates the several possible status types for a creature.
+ * Enumerates the several possible move status types for a creature.
  * <hr>
  * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
  */
-public enum HealthStatusType
+public enum MoveStatusType
 {
 	/**
-	 * The status of the creature is undefined.
+	 * The creature is not moving.
 	 */
-	UNDEFINED,
+	NONE,
 
 	/**
-	 * The creature is alive.
+	 * The creature is walking.
 	 */
-	ALIVE,
+	WALKING,
 
 	/**
-	 * The creature is dead.
+	 * The creature is running.
 	 */
-	DEAD;
+	RUNNING,
+
+	/**
+	 * The creature is swimming.
+	 */
+	SWIMMING,
+
+	/**
+	 * The creature is flying.
+	 */
+	FLYING,
+
+	/**
+	 * The creature is crawling.
+	 */
+	CRAWLING,
 }
