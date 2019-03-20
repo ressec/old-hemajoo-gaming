@@ -23,7 +23,7 @@ import com.hemajoo.gaming.atlas.common.avatar.RaceType;
 import com.hemajoo.gaming.atlas.common.avatar.SpecializationType;
 import com.hemajoo.gaming.atlas.common.avatar.HealthStatusType;
 import com.hemajoo.gaming.atlas.common.avatar.TitleType;
-import com.hemajoo.gaming.atlas.common.base.BackEnd;
+import com.hemajoo.gaming.atlas.common.base.IBackEnd;
 
 /**
  * Provides a concrete implementation of an avatar on the back-end side.
@@ -31,7 +31,7 @@ import com.hemajoo.gaming.atlas.common.base.BackEnd;
  * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
  */
-public final class Avatar extends AbstractAvatar implements BackEnd
+public final class Avatar extends AbstractAvatar implements IBackEnd
 {
 	/**
 	 * Random number generator.

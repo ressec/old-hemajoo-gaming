@@ -13,7 +13,7 @@ package com.hemajoo.gaming.atlas.client.avatar;
 
 import com.hemajoo.gaming.atlas.common.avatar.AbstractAvatar;
 import com.hemajoo.gaming.atlas.common.avatar.IAvatar;
-import com.hemajoo.gaming.atlas.common.base.FrontEnd;
+import com.hemajoo.gaming.atlas.common.base.IFrontEnd;
 
 /**
  * Provides a concrete implementation of an avatar on the front-end side.
@@ -21,7 +21,7 @@ import com.hemajoo.gaming.atlas.common.base.FrontEnd;
  * @author  <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo</a>
  * @version 1.0.0
  */
-public final class Avatar extends AbstractAvatar implements FrontEnd
+public final class Avatar extends AbstractAvatar implements IFrontEnd
 {
 	/**
 	 * Default serialization identifier.

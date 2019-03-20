@@ -13,12 +13,12 @@ package com.hemajoo.gaming.atlas.common.base;
 
 /**
  * Marker interface specifying an object annotated with this annotation is only valid on the front-end
- * - Client component and derived ones - of the application.
+ * side of the application.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo <a/>
  * @version 1.0.0
  */
-public interface FrontEnd
+public interface IFrontEnd
 {
 	// EMPTY
 }

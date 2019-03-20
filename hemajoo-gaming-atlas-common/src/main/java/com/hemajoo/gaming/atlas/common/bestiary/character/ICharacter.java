@@ -9,16 +9,21 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.hemajoo.gaming.atlas.common.base;
+package com.hemajoo.gaming.atlas.common.bestiary.character;
+
+import com.hemajoo.gaming.atlas.common.bestiary.creature.ICreature;
 
 /**
- * Marker interface specifying an object annotated with this annotation is only valid on the back-end
- * side of the application.
+ * Interface specifying the behavior of a character.
+ * <p>
+ * It can be, by opposition of a creature or monster controlled by a human player (in this case
+ * it's an avatar also called PC for playable character) or controlled by the AI
+ * (artificial intelligence) and in such a case it's a non playable character (also called NPC).
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo <a/>
  * @version 1.0.0
  */
-public interface IBackEnd
+public interface ICharacter extends ICreature
 {
 	// EMPTY
 }

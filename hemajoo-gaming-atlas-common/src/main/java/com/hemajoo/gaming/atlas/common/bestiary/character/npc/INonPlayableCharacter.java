@@ -9,16 +9,20 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.hemajoo.gaming.atlas.common.base;
+package com.hemajoo.gaming.atlas.common.bestiary.character.npc;
+
+import com.hemajoo.gaming.atlas.common.bestiary.character.ICharacter;
 
 /**
- * Marker interface specifying an object annotated with this annotation is only valid on the back-end
- * side of the application.
+ * Interface specifying the behavior of a non playable character (NPC).
+ * <p>
+ * A non playable character is a creature in the world (also called a NPC)
+ * which is controlled by the AI (artificial intelligence).
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Resse Christophe - Hemajoo <a/>
  * @version 1.0.0
  */
-public interface IBackEnd
+public interface INonPlayableCharacter extends ICharacter
 {
 	// EMPTY
 }
