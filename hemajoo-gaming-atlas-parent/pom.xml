@@ -6,7 +6,7 @@
 	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Hemajoo's Gaming Atlas parent project.</name>
+	<name>Hemajoo's Gaming Software Atlas project (HGSA).</name>
 
 
 	<licenses>
@@ -53,6 +53,7 @@
 	</ciManagement>
 
 	<properties>
+		<project.java.version>9</project.java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.directory.benchmark>${basedir/benchmark}</project.directory.benchmark>
 		<project.directory.run>${basedir/run}</project.directory.run>
@@ -77,11 +78,11 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.6.1</version>
+					<version>3.8.0</version>
 					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
-						<encoding>UTF-8</encoding>
+						<source>${project.java.version}</source>
+						<target>${project.java.version}</target>
+						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
 				</plugin>
 
@@ -198,6 +199,19 @@
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.5.3</version>
 				</plugin>
+
+				<!-- QUALITY: Java Code Coverage. -->
+	            <plugin>
+					<groupId>org.jacoco</groupId>
+              		<artifactId>jacoco-maven-plugin</artifactId>
+              		<version>0.8.2</version>
+            	</plugin>
+            	
+            	<plugin>
+                	<groupId>org.sonarsource.scanner.maven</groupId>
+                	<artifactId>sonar-maven-plugin</artifactId>
+                	<version>3.4.0.905</version>
+            	</plugin>
 
 			</plugins>
 
@@ -365,7 +379,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>1.16.10</version>
+				<version>1.16.18</version>
 			</dependency>
 
 			<dependency>
@@ -418,7 +432,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<url>https://github.com/ressec/hemajoo-gaming</url>
-	<description>Parent for the Hemajoo’s Gaming Atlas project.</description>
+	<description>Parent project of the Hemajoo’s Gaming Software Atlas solution.</description>
 	
 	
 	<parent>
