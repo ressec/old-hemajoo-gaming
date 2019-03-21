@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.hemajoo.gaming.atlas</groupId>
+	<groupId>com.hemajoo.gaming</groupId>
 	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -63,6 +63,8 @@
 
 
 	<build>
+
+		<finalName>${project.groupId}-${project.artifactId}-${project.version}</finalName>  
 
 		<pluginManagement>
 
@@ -438,5 +440,7 @@
 	<modules>
 		<module>../hemajoo-gaming-atlas-common</module>
 		<module>../hemajoo-gaming-atlas-model</module>
+		<module>../hemajoo-gaming-atlas-client</module>
+		<module>../hemajoo-gaming-atlas-server</module>
 	</modules>
 </project>
