@@ -61,12 +61,6 @@
 		<project.directory.log>${basedir/log}</project.directory.log>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-	</dependencies>
 
 	<build>
 
@@ -379,7 +373,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>1.16.18</version>
+				<version>1.18.4</version>
 			</dependency>
 
 			<dependency>
