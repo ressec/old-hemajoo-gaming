@@ -52,6 +52,10 @@
 		<artifactId>owner</artifactId>
 	</dependency>
 
+	<dependency>
+		<groupId>com.github.javafaker</groupId>
+		<artifactId>javafaker</artifactId>
+	</dependency>
   </dependencies>
 
   <url>https://github.com/ressec/hemajoo-gaming</url>
