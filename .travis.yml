@@ -19,7 +19,7 @@ addons:
 #cache:
 #before_script:
 
-script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -f hemajoo-gaming-atlas-parent/pom.xml
+script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -f hemajoo-gaming-atlas-parent/pom.xml -Dsonar.projectKey=ressec_hemajoo-gaming
 
 deploy:
   provider: script
