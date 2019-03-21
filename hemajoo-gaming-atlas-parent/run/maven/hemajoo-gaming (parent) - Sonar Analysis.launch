@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
 <booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
-<stringAttribute key="M2_GOALS" value="clean package sonar:sonar"/>
+<stringAttribute key="M2_GOALS" value="clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar"/>
 <booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
 <booleanAttribute key="M2_OFFLINE" value="false"/>
 <stringAttribute key="M2_PROFILES" value=""/>
@@ -9,7 +9,7 @@
 <listEntry value="sonar.organization=ressec-github"/>
 <listEntry value="sonar.host.url=https://sonarcloud.io"/>
 <listEntry value="sonar.login=85d3b16f8a118a3ff28cdd51e11b41b1fece6da5"/>
-<listEntry value="projectKey=ressec_hemajoo-gaming"/>
+<listEntry value="sonar.projectKey=ressec_hemajoo-gaming"/>
 </listAttribute>
 <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
 <booleanAttribute key="M2_SKIP_TESTS" value="false"/>
