@@ -1,6 +1,5 @@
 # hemajoo-gaming
 
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=com.hemajoo.gaming.atlas%3Aparent)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.hemajoo.gaming.atlas%3Aparent&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.hemajoo.gaming.atlas%3Aparent)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=com.hemajoo.gaming.atlas%3Aparent&metric=bugs)](https://sonarcloud.io/dashboard?id=com.hemajoo.gaming.atlas%3Aparent)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=com.hemajoo.gaming.atlas%3Aparent&metric=code_smells)](https://sonarcloud.io/dashboard?id=com.hemajoo.gaming.atlas%3Aparent)
