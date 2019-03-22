@@ -1,0 +1,1 @@
+The Hemajoo's Gaming Software Model component for Atlas provides the data model of the game.
