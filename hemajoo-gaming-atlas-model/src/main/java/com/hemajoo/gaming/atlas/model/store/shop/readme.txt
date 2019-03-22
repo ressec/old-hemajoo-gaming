@@ -1,0 +1,1 @@
+Physical items are sold in the shop by opposition to the store where virtual items are sold.
